@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portofolio</title>
+  </head>
+  <body onload="visitor()"> <!-- onload="visitor()" -->
+
+    <!-- navbar -->
+    <nav>
+      <img src="images/logo1.png" class="logo" alt="logo" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <!-- <li><a href="#organisasi">Organization</a></li> -->
+        <li class="contact"><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Intro -->
+    <div class="container" id="home">
+      <div>
+        <p>Hello</p>
+        <p>I'M Mukhamad Ivan Alvian</p>
+        <p>I am a 3D Modeller & Graphic Designer</p>
+        <button class="contactme" onclick="alert('Web Masih Diperbaiki')">Contact Me</button>
+        <button class="download" onclick="prompt('Web Masih Diperbaiki')">Download CV</button>
+      </div>
+      <img src="images/fixed.png" class="model" alt="model">
+    </div>
+
+    <!-- about -->
+    <div class="about" id="about">
+      <img src="images/fixed1.png" alt="model1" />
+      <div class="about-text">
+        <p>About Me</p>
+        <p>3D Modeller & Graphic Designer</p>
+        <p>
+          Hello my name is Muhammad Ivan Alvian, I am from Indonesian Country.
+          Now I am 20 years old, I am studying at the Politeknik Negeri
+          Banyuwangi
+        </p>
+        <p>
+          If you need 3D Modeller and also Graphic Designer Developer you can
+          contact me. I will do with my best
+        </p>
+      </div>
+    </div>
+
+    <!-- project -->
+    <div class="project">
+      <div class="project-text">
+        <p>My Project</p>
+        <p>as 3D Modeller & Graphic Designer</p>
+      </div>
+      <img src="images/portofolio.png" alt="portofolio" id="project">
+      <button class="viewmore" onclick="alert('Web Masih Diperbaiki')">View More</button>
+    </div>
+
+    <!-- view -->
+    <div class="view">
+      <div class="project-text2">
+        <p>3D View</p>
+        <p>This my project for coffee bussiness</p>
+      </div>
+      <canvas id="c"></canvas>
+      <script src="node_modules/three/build/three.js"></script>
+      <script src="node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+      <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script>
+      <script src="lib/3D.js"></script>
+    </div>
+
+    <!-- organizational experience -->
+    <div class="organisasi" id="organisasi">
+      <div class="organisasi-text">
+        <p>Organizational</p>
+        <p>Experience</p>
+        <p>
+          Here are some organizations that I have joined to build
+          my identity and soft skills, so that I can become a more
+          qualified person
+        </p>
+      </div>
+      <div class="box-container">
+        <div class="box-1">
+          <span>1</span>
+          <p>NU</p>
+          <p>Nahdatul Ulama</p>
+          <p>I serve as a member, here usually I am needed to make an
+            infographic design for a religious event
+          </p>
+        </div>
+        <div class="box-2">
+          <span>2</span>
+          <p>HMTI</p>
+          <p>Himpunan Teknik Informatika</p>
+          <p>In this organization I served as member of communication and informatics media division,
+            there I was assigned to design various content for instagram feeds or banners and much more
+          </p>
+        </div>
+        <div class="box-3">
+          <span>3</span>
+          <p>PERSMA TINTA</p>
+          <p>Pers Mahasiswa</p>
+          <p>In this organization I served as a member of the online media division,
+            there I was assigned to design various poster, banner, or ig feeds.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="fake" id="contact">
+      <div>
+        <p>Contact</p>
+        <p>
+          Mukhamad Ivan Alvian <br />
+          Jl.Lumbang Ds.Tongas Kec.Tongas Probolinggo
+        </p>
+        <p ondblclick="alert('Jangan Spam!!')">alvianbuyar@gmail.com</p>
+      </div>
+      <div>
+        <p class="compatible">Compatible Device</p>
+        <img src="images/logofix.png" alt="logo" class="lgo" />
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p id="teks">Copyright &copy;2021 - Mukhamad Ivan Alvian | All right reserved</p>
+      </div>
+    </footer>
+
+    <!-- additional script -->
+    <script src="lib/javascript.js"></script>
+
+  </body>
+</html>
